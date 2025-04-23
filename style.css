@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #fffaf7;
     --secondary-color: #ff6d38;
@@ -5,33 +6,160 @@
     --heading-color: #333;
     --light-color: #f9f9f9;
     --dark-color: #333;
-  
+    
     --btn-primary-bg: #333;
     --btn-secondary-bg: #e74c3c;
     --btn-accent-bg: #00a652;
     --btn-primary-hover-bg: #8584ff;
     --btn-secondary-hover-bg: #333;
-  
+    
     --font-family-heading: 'Amatic SC', sans-serif;
     --border-radius: 8px;
-  
+    
     --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 3px 10px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 5px 15px rgba(0, 0, 0, 0.2);
-  
+    
     --section-margin: 2rem 0;
     --container-width: 90%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+/* .header-banner{
+    background-image: url('./img/glomad-marketing-6VQlKJp2vpo-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    filter:brightness(60%);
+} */
+
+.header-banner {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    text-align: center;
+    overflow: hidden;
   }
+  
+  /* Image avec assombrissement uniquement ici */
+  .header-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./img/glomad-marketing-6VQlKJp2vpo-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    filter: brightness(60%);
+    z-index: -1;
+  }
+  
+  /* Tout le contenu reste bien visible */
+  .header-banner > * {
+    position: relative;
+    z-index: 1;
+  }
+
+
+h1{
+    font-family:"Amatic SC", sans-serif;
+    color: #f9f9f9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 75px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.intro{
+    color: #f9f9f9;
+    margin-top: 140px;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+}
 
 .nav-bar{
     background-color: #fffaf7;
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
 
 .nav-items{
     display: flex;
     justify-content: center;
-    
+    list-style-type: none;
+    gap: 30px;
+}
+
+.nav-items li{
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+
+.donate-btn{
+    margin-top: 5px;
+    height: 40px;
+    width: 130px;
+    border-radius: 50px;
+    margin-left: 20%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+}
+
+.adaopte{
+    margin-right: 20%;
+    font-size: 30px;
+}
+
+.orange{
+    color: var(--secondary-color);
+}
+
+.nav-bar img{
+height: 25px;
+width: 25px;
+margin-right: 8px;
+}
+
+.to-adopt{
+height: 500px;
+width: auto;
+background-color: var(--light-color);
+text-align: center;
+}
+
+.to-adopt-title{
+    margin-top: 200px;
+    font-family:"Amatic SC", sans-serif;
+    font-size: 40px;
+}
+
+.to-adopt-description{
+    margin-top: 30px;
+}
+
+h1, p, section {
+    marfin: 0;
 }
