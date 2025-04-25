@@ -53,9 +53,9 @@ body{
 .header-banner {
     position: relative;
     width: 100%;
-    height: 580px;
+    height: 500px;
     text-align: center;
-    overflow: hidden;
+
   }
   
   /* Image avec assombrissement uniquement ici */
@@ -84,7 +84,7 @@ h1{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 70px;
     text-transform: uppercase;
-    position: relative;
+    /* position: relative; */
     z-index: 1;
     text-align: center;
 }
@@ -131,6 +131,7 @@ h1{
 .adaopte{
     margin-right: 20%;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .orange{
@@ -144,7 +145,7 @@ h1{
 }
 
 .to-adopt{
-    padding-top: 200px;
+    padding-top: 100px;
     width: auto;
     background-color: var(--primary-color);
     text-align: center;
@@ -168,16 +169,16 @@ h1, p, section {
 
 .conteneur-images{
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns:repeat(4, 1fr); /*Ici je crée les colonnes de ma grille, soit 4 colonnes de 1 fraction de ma page*/
+    grid-auto-rows: minmax(100px, auto); /*Ici je crée les lignes horizontales de ma grille*/
     grid-gap: 10px;
     margin: 40px 20%;
 }
 
 .one{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 1 / 3;
+    grid-column-start: 1; /*Mon élément 1 commence à la colonne 1*/
+    grid-column-end: 2; /*Et se termine à la colonne 2*/
+    grid-row: 1 / 3; /*Ici, c'est une autre façon plus rapide de l'écrire: commence à la ligne horizontale 1 et se termine en 3*/
 }
 
 .two{
@@ -307,10 +308,17 @@ h4{
     font-size: 30px;
     margin-bottom: 20px;
 }
+hr{
+    height: 1px;
+    border: none;
+    background-color: grey;
+}
 
 footer{
     background-color: var(--heading-color);
     color: var(--primary-color);
+}
+.footer{
     display: flex;
     gap: 200px;
     padding: 30px;
@@ -319,4 +327,49 @@ footer p, li{
     line-height: 25px;
 }
 
+.bloc-footer img{
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 8px;
+    margin: 20px 5px;
+}
+
+.bloc-footer a{
+    cursor: pointer;
+}
+
+.copyright-section{
+    padding: 50px;
+    color: grey;
+    text-align: center;
+}
+
+.info{
+    color: grey;
+}
+
+button{
+    cursor: pointer;
+}
+
+.search-bar{
+    padding: 40px;
+    background-color: var(--light-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    border-radius: 8px;
+    position: absolute;
+    top: 440px;
+    margin: 0 30%;
+    z-index: 10;
+    gap: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
 

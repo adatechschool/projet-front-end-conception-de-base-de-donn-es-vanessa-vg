@@ -9,18 +9,34 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <p class="adaopte"><img src="paws.png">Ada<span class="orange">opte</span></p>
+        <p class="adaopte"><img src="./icones/paws.png">Ada<span class="orange">opte</span></p>
         <ul class="nav-items">
-            <li><img src="./house.png">Accueil</li>
-            <li><img src="./paw-print.png">J'adopte</li>
-            <li><img src="./fish.png">Guide de l'adoption</li>
-            <li><img src="./heart-handshake.png">Devenir bénévole</li>
+            <li><img src="./icones/house.png">Accueil</li>
+            <li><img src="./icones/paw-print.png">J'adopte</li>
+            <li><img src="./icones/fish.png">Guide de l'adoption</li>
+            <li><img src="./icones/heart-handshake.png">Devenir bénévole</li>
         </ul>
         <button class="donate-btn">Faire un don 🫶</button>
     </nav>
     <section class="header-banner">
         <h1>Donnons-leur autant qu'ils nous<br> apportent...</h1>
         <p class="intro">Chaque jour, des milliers d'animaux attendent une famille aimante. Trouvez votre<br> compagnon idéal parmi nos animaux disponibles à l'adoption.</p>
+        <div class="search-bar">
+            <div class="input-group">
+            <label for="animal-type">Type d'animal</label>
+            <select name="animals" id="animal-type">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Chiens</option>
+                <option value="cat">Chats</option>
+                <option value="rabbit">Lapins</option>
+                </select>
+            </div>
+            <div class="input-group">
+            <label for="localisation">Localisation</label>
+            <input type="search" id="localisation" name="q" placeholder="Votre ville"/>
+            </div>
+            <button>Rechercher</button>
+        </div>
     </section>
 
     <section class="to-adopt">
@@ -76,11 +92,19 @@
    </section>
 
    <footer>
+    <div class="footer">
     <div class="bloc-footer">
         <h4>Adaopte</h4>
             <p>Notre mission est de trouver des foyers aimants pour <br>chaque animal abandonné et de promouvoir le bien-être animal.</p>
+            <a href="https://www.facebook.com/AdaTechSchool/?locale=fr_FR"><img src="./icones/facebook.png"></a>
+            <a href="https://www.instagram.com/adatechschool/?hl=fr"><img src="./icones/instagram.png"></a>
+            <a href="https://www.linkedin.com/school/ada-tech-school/"><img src="./icones/linkedin.png"></a>
+            <a href="https://www.twitch.tv/"><img src="./icones/twitch.png"></a>
+
+
+
             </div>
-            <div class="bloc-footer">
+            <div class="bloc-footer info">
             <h4>Informations utiles</h4>
             <ul>
                 <li>FAQS</li>
@@ -95,6 +119,11 @@
             <p>75010 Paris, France</p>
             <p>Email: contact@adaopte.fr</p>
             <p>Tél: +33 1 23 45 67 89</p>
+        </div>
+    </div>
+    <hr>
+    <div class="copyright-section">
+        <p>© 2025 Adaopte. Tous droits résérvés. <br>Ce site a été développé dans le cadre d'un projet pour ADA Tech School.</p>
         </div>
    </footer>
 
