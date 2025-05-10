@@ -12,7 +12,7 @@
         <p class="adaopte"><img src="./icones/paws.png">Ada<span class="orange">opte</span></p>
         <ul class="nav-items">
             <li><img src="./icones/house.png">Accueil</li>
-            <li><img src="./icones/paw-print.png">J'adopte</li>
+            <li><img src="./icones/paw-print.png"><a href = "./jadopte.html">J'adopte</a></li>
             <li><img src="./icones/fish.png">Guide de l'adoption</li>
             <li><img src="./icones/heart-handshake.png">Devenir bénévole</li>
         </ul>
@@ -20,23 +20,27 @@
     </nav>
     <section class="header-banner">
         <h1>Donnons-leur autant qu'ils nous<br> apportent...</h1>
-        <p class="intro">Chaque jour, des milliers d'animaux attendent une famille aimante. Trouvez votre<br> compagnon idéal parmi nos animaux disponibles à l'adoption.</p>
-        <div class="search-bar">
-            <div class="input-group">
-            <label for="animal-type">Type d'animal</label>
-            <select name="animals" id="animal-type">
-                <option value="">--Please choose an option--</option>
-                <option value="dog">Chiens</option>
-                <option value="cat">Chats</option>
-                <option value="rabbit">Lapins</option>
-                </select>
-            </div>
-            <div class="input-group">
-            <label for="localisation">Localisation</label>
-            <input type="search" id="localisation" name="q" placeholder="Votre ville"/>
-            </div>
-            <button>Rechercher</button>
-        </div>
+        <p class="intro">Chaque jour, des milliers d'animaux attendent une famille aimante. Trouvez votre<br> compagnon idéal parmi nos animaux disponibles à l'adoption.</p><br>
+        <div class="search-container">
+            <div class="search-fields">
+                <label for="animalType">Type d'animal</label>
+                <select id="animalType">
+                    <option value="tous">Tous les animaux</option>
+                    <option value="chien">Chien</option>
+                    <option value="chat">Chat</option>
+                    <option value="lapin">Lapin</options>
+                    <option value="cochon d'inde">Cochon d'Inde</option>
+                    <option value="poney">Poney</option>
+                    </select>
+        
+                <label for="localisation">Localisation</label>
+                <input type="search" id="localisation" name="q" placeholder="Votre ville">
+                <button id="searchAnimalButton">🔍 Rechercher</button>
+                </div>
+            </div>  
+            <p id="resultCount"></p>
+        <div id="results"></div>
+        
     </section>
 
     <section class="to-adopt">

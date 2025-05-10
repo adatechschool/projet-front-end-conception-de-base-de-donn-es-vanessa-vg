@@ -91,7 +91,7 @@ h1{
 
 .intro{
     color: #f9f9f9;
-    margin-top: 140px;
+    margin-top: 100px;
     font-size: 25px;
     font-family: "Roboto", sans-serif;
 }
@@ -101,6 +101,7 @@ h1{
     display: flex;
     justify-content: center;
     padding: 15px;
+    box-shadow: var(--shadow-xl);
 }
 
 .nav-items{
@@ -145,7 +146,7 @@ h1{
 }
 
 .to-adopt{
-    padding-top: 100px;
+    padding-top: 40px;
     width: auto;
     background-color: var(--primary-color);
     text-align: center;
@@ -373,3 +374,88 @@ button{
     flex-direction: column;
 }
 
+#results {
+    display: grid; /* Afficher les cartes sous forme de grille */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* S'adapte automatiquement */
+    gap: 60px; /* Espace entre les cartes */
+    padding: 15px; /* Un peu d'air autour */
+    justify-content: center;
+    /* align-items: start; Aligner le haut des cartes */
+    max-width: 1200px; /* Limiter la largeur totale */
+    margin: 0 auto; /* 👉 Centrer le conteneur sur la page */
+  }
+  
+  /* Style pour les cartes */
+  #results div {
+    transition: transform 0.3s, box-shadow 0.3s; /* Douce transition au survol */
+    width: 300px;
+  }
+  
+  /* Effet au survol : grandir légèrement + ombre */
+  #results div:hover {
+    transform: scale(1.05); /* Agrandir un peu */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajouter une belle ombre */
+  }
+
+  .search-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  .search-fields{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius : 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-fields label{
+    font-weight: bold;
+  }
+
+  .search-fields select,
+  .search-fields input[type="search"] {
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  .search-fields select:focus,
+  .search-fields input[type="search"]:focus {
+    border-color: var(--secondary-color); /*Change en orange la bordure des champs*/
+  }
+
+  .search-fields button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .search-fields button:hover {
+    transform: scale(1.1);
+  }
+
+  #resultCount {
+    font-size: 15px;
+    color: #555;
+    margin-left: 20px;
+  }
+
+  .body-2{
+    background-color: var(--primary-color);
+  }
+
+  a {
+    text-decoration: none;
+  }
